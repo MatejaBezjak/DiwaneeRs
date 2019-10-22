@@ -1,0 +1,28 @@
+{
+  "name": "diwaneesr",
+  "version": "1.0.0",
+  "description": "about the greatest team on this planet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatejaBezjak/DiwaneeRs.git"
+  },
+  "keywords": [
+    "diwanee"
+  ],
+  "author": "Mateja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatejaBezjak/DiwaneeRs/issues"
+  },
+  "homepage": "https://github.com/MatejaBezjak/DiwaneeRs#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^6.1.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
+  }
+}
