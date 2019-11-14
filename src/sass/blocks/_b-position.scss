@@ -1,0 +1,153 @@
+.b-position{
+  position: relative;
+  background-color: $beige;
+  color: $black;
+  @include breakpoint(tablet){
+    background-color: $white;
+    margin-bottom: 1.9rem;
+  }
+  @include breakpoint(desktop){
+    background-color: $white;
+    margin-bottom: 1.6rem;
+  }
+  &:nth-of-type(2){
+    background-color: $white;
+    @include breakpoint(tablet){
+      color: $white;
+      background-color: $black;
+    }
+    @include breakpoint(desktop){
+      background-color: $black;
+      color: $white;
+    }
+
+    & .b-position {
+      &__description-skill {
+        span{
+          @include breakpoint(tablet){
+            color: $white;
+          }
+          @include breakpoint(desktop){
+            color: $white;
+          }
+        }
+
+      }
+      &__apply {
+        & .c-btn{
+          color: $white;
+          border-color: $white;
+        }
+
+      }
+    }
+  }
+
+&__content{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    display: block;
+    padding: 1.4rem 2.6rem 1.7rem 0.9rem;
+    @include breakpoint(tablet){
+        padding: 4.2rem 9.5rem 5.6rem 9.1rem;
+    }
+    @include breakpoint(desktop){
+      padding: 4.2rem 30.2rem 5.2rem 30.2rem;
+  }
+}
+
+&__description{
+    @include breakpoint(tablet){
+        width: 54%;
+        float: left;
+        padding-top: 0.4rem;
+    }
+    @include breakpoint(desktop){
+      width: 54%;
+      float: left;
+      padding-top: 0.6rem;
+  }
+    h3{
+      font-family: $roboto;
+      @include lineHeightRem (42, 24, 24);
+      @include fontSizeRem (18, 20, 20);
+      font-weight: 400;
+      padding-bottom: 1.7rem;
+    }
+    p{
+      font-family: $roboto;
+      @include lineHeightRem (20, 28, 28);
+      @include fontSizeRem (15, 18, 18);
+      font-weight: 300;
+      letter-spacing: 0.005em;
+      padding-bottom: 2.5rem;
+      @include breakpoint(tablet){
+          padding-bottom: 2.8rem;
+      }
+      @include breakpoint(desktop){
+          padding-bottom: 2rem;
+      }
+    }
+    &-skill{
+      display: inline-block;
+      padding-top: 1.2rem;
+      @include breakpoint(tablet){
+          padding-top: 0;
+      }
+      span{
+          display: inline-block;
+          text-align: center;
+          color: $red;
+          font-family: $roboto;
+          @include fontSizeRem (14, 13, 13);
+          font-weight: 300;
+          @include breakpoint(tablet){
+                border: 1px solid $tag-grey;
+                padding: 0.9rem 1.6rem 0.9rem 1.6rem;
+
+          }
+          @include breakpoint(desktop){
+            border: 1px solid $tag-grey;
+            padding: 0.9rem 1.6rem 0.9rem 1.6rem;
+
+          }
+      }
+    }
+  }
+  &__apply{
+      @include breakpoint(tablet){
+          width: 46%;
+          float: left;
+          padding-top: 5.7rem;
+
+      }
+      @include breakpoint(desktop){
+        width: 46%;
+        float: left;
+        padding-top: 5.8rem;
+
+    }
+
+  }
+  & .c-btn{
+
+        &--bordered{
+            display: none;
+            @include breakpoint(tablet){
+                display: inline-block;
+                width: 16.9rem;
+                height: 4.7rem;
+                letter-spacing: 0.1em;
+                float:right;
+            }
+            @include breakpoint(desktop){
+              display: inline-block;
+              width: 16.9rem;
+              height: 4.7rem;
+              letter-spacing: 0.1em;
+              float:right;
+            }
+        }
+  }
+}

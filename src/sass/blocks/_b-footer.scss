@@ -1,0 +1,172 @@
+.b-footer{
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  display: block;
+  background-color: $black;
+  &__location{
+      position: relative;
+      margin:auto;
+      padding: 8.8rem 3rem 0 2.7rem;
+      margin-bottom: 1.2rem;
+      background-color: $black;
+      @include breakpoint(tablet){
+        padding: 13.6rem 0 0 8rem;
+        margin-bottom: 0;
+        min-height: 38rem;
+      }
+      @include breakpoint(desktop){
+        padding: 13.6rem 0 0 26rem;
+        min-height: 38rem;
+        margin-bottom: 0;
+      }
+  }
+  &__city{
+      max-width: 100%;
+      position: relative;
+      margin: auto;
+      display: block;
+      margin-bottom: 4.8rem;
+      @include breakpoint(tablet){
+        width: 24%;
+        margin-right: 11.3rem;
+        float: left;
+      }
+      @include breakpoint(desktop){
+        width: 21%;
+        margin-right: 16.2rem;
+        float: left;
+      }
+      &:nth-of-type(2){
+        margin-bottom: 4.3rem;
+      }
+      &:nth-of-type(3){
+          @include breakpoint(tablet){
+            margin-right: 0;
+          }
+          @include breakpoint(desktop){
+            margin-right: 0;
+          }
+      }
+      &-icon{
+          display: inline-block;
+          vertical-align: bottom;
+          margin-right: 1rem;
+      }
+      span{
+          @include lineHeightRem (24, 24, 24);
+          @include fontSizeRem (16, 16, 16);
+          font-family: $roboto;
+          color: $font-white;
+          font-weight: 500;
+      }
+      ul{
+          @include lineHeightRem (24, 24, 24);
+          @include fontSizeRem (16, 15, 15);
+          font-family: $roboto;
+          color: $font-dark-grey;
+          font-weight: 400;
+          letter-spacing: 0.01em;
+          margin-top: 1.2rem;
+          margin-left: 0.7rem;
+          @include breakpoint(tablet){
+            margin-top: 2.2rem;
+            margin-left: 0;
+          }
+          @include breakpoint(desktop){
+            margin-top: 2.3rem;
+            margin-left: 0;
+          }
+      }
+  }
+  &__bottom{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    display: block;
+    @include breakpoint(tablet){
+      padding-left: 4.9rem;
+      padding-right: 4rem;
+      background-color: $footer-black;
+    }
+    @include breakpoint(desktop){
+      padding-left: 25.8rem;
+      padding-right: 20.5rem;
+      background-color: $footer-black;
+    }
+    &__links{
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      margin: auto;
+      padding-left: 3.4rem;
+      margin-bottom: 3.1rem;
+      @include breakpoint(tablet){
+        width: 28%;
+        margin-top: 2.6rem;
+        margin-bottom: 0;
+        float: right;
+      }
+      @include breakpoint(desktop){
+        width: 30%;
+        margin-top: 2.6rem;
+        margin-bottom: 0;
+        padding-left: 2.3rem;
+        float: right;
+      }
+    }
+    &-link{
+      margin-right: 3rem;
+      float: left;
+      &:nth-of-type(3){
+        margin-right: 0;
+      }
+      img {
+        width: 3.1rem;
+        height: 2.9rem;
+        @include breakpoint(tablet){
+          width: 2.1rem;
+          height: 2rem;
+        }
+        @include breakpoint(desktop){
+          width: 2.1rem;
+          height: 2rem;
+        }
+      }
+      span{
+        font-family: $roboto;
+        @include lineHeightRem (24, 24, 24);
+        @include fontSizeRem (14, 14, 14);
+        font-weight: 300;
+        color: $font-dark-grey;
+
+      }
+    }
+    &__copyright{
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+      background-color: $footer-black;
+      font-family: $roboto;
+      @include lineHeightRem (24, 24, 24);
+      @include fontSizeRem (12, 12, 12);
+      font-weight: 300;
+      color: $font-dark-grey;
+      text-align: center;
+      @include breakpoint(tablet){
+        width: 50%;
+        float: left;
+        padding-top: 2.4rem;
+        padding-bottom: 2.4rem;
+        text-align: left;
+      }
+      @include breakpoint(desktop){
+        width: 50%;
+        float: left;
+        padding-top: 2.3rem;
+        padding-bottom: 2.3rem;
+        text-align: left;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@function calculateVw($target, $container) {
+	@return ($target / $container) * 100vw;
+}
+
+@function calculateRem($size) {
+	$remSize: $size / $base-font-size; 
+	@return #{$remSize}rem; 
+}

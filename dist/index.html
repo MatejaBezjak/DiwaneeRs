@@ -8,38 +8,223 @@
   <link rel="stylesheet" href="../dist/css/style.css">
 </head>
 <body>
-  <div id="wrapper">
-    <header class="b-header">
-      <div class="b-header--container">
+<div id="wrapper">
+  <header class="b-header">
+      <div class='main-wrapper'>
+        <div class="b-header__container">
+          <div class="b-header__components clearfix">
+              <div class="b-header__logo"><img id="diwLogo"src="images/Logo.png"  alt="Diwanee"/></div>
+              <div id= "burger" class="b-header__burger">
+                <div class="b-header__burger-line1"></div>
+                <div class="b-header__burger-line2"></div>
+                <div class="b-header__burger-line3"></div>
+              </div>
+          </div>
 
-        <div class="b-header--logo"><img id="diwLogo"src="images/DiwaneeLogo.png" alt="Diwanee"/></div>
-
-        <nav class="c-navigation">
-          <ul>
-            <li><a href="#page">O NAMA</a></li>
-            <li><a href="#page">POSLOVI</a></li>
-            <li><a href="#page">KONTAKT</a></li>
+        <nav id="dropdown" class="b-header__navigation">
+          <ul >
+            <li><a href="#about">O NAMA</a></li>
+            <li><a href="#work">POSLOVI</a></li>
+            <li><a href="#contact">KONTAKT</a></li>
           </ul>
-         </nav>
+          <div class="b-header__contact clearfix">
+            <span>PRATITE NAS</span>
+            <div class="b-header__social clearfix">
+              <div class="b-header__social-icon"><a href="https://twitter.com/diwanee?lang=en" target="_blank"><img src="images/Twitt-nav.png" alt="Twitter"></a></div>
+              <div class="b-header__social-icon"><a href="https://www.facebook.com/Diwanee/" target="_blank"><img src="images/Face-nav.png" alt="Facebook"></a></div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      </div>
+  </header>
+<!-- end header-->
+
+<!-- start hero-->
+<div class="b-hero">
+      <div class="main-wrapper">
+        <div class="b-hero__content">
+
+          <h1 >DIWANEE SERBIA</h1>
+
+          <h2>Digital Media Agency always looking for motivated,</br> multi-talented, and organized people to join our</br>
+          diverse team.</h2>
         </div>
-     </header>
-     <div class="b-hero">
-       <img class="mainImg" src="images/MainImg.png" alt="Belgrade"/>
-     <div class="b-hero--content">
-       
-       <h1 >DIWANEE SERBIA</h1>
+       </div>
+</div>
+<!-- end hero-->
 
-         <h2>Digital Media Agency always looking for motivated,</br> multi-talented, and organized people to join our</br>
-     diverse team.</h2>
-   </div>
+<!-- start o_nama-->
+<div id="about" class="b-about">
+<div class='main-wrapper clearfix'>
+
+
+<div class="b-about__block">
+  <div class="b-about__icon"><img  src="images/triangle.png" alt="Triangle"></div>
+  <div class="b-about__content">
+    <h1>DEVELOPMENT</h1>
+    <p>Front-end Developers play a critical role in most projects at Code and Theory. They are actively involved throughout the project lifecycle, often times starting with rapid prototypes early in the design phase. </p>
+  </div>
+</div>
+
+<div class="b-about__block b-about__block--grey">
+  <div class="b-about__icon"><img  src="images/circle.png" alt="Circle"></div>
+  <div class="b-about__content">
+    <h1>WEB & UI DESIGN</h1>
+    <p>Front-end Developers play a critical role in most projects at Code and Theory. They are actively involved throughout the project lifecycle, often times starting with rapid prototypes early in the design phase. </p>
+  </div>
+</div>
+
+<div class="b-about__block">
+  <div class="b-about__icon"><img  src="images/square.png" alt="Square"></div>
+  <div class="b-about__content">
+    <h1>WORK IN TEAM</h1>
+    <p>Front-end Developers play a critical role in most projects at Code and Theory. They are actively involved throughout the project lifecycle, often times starting with rapid prototypes early in the design phase. </p>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+
+<!--end o_nama -->
+
+<!--start poslovi -->
+<div id="work" class="b-work">
+<div class="main-wrapper">
+<div class="b-work__intro">
+    <span>OTVORENE POZICIJE</span>
+    <h2>POSLOVI</h2>
+    <p>We are always looking for motivated, multi-talented, and organized people to join our
+    diverse team.</p>
+</div>
+
+<div class="b-work__blocks">
+ <div class="b-position">
+      <div class="b-position__content clearfix">
+          <div class="b-position__description">
+              <h3>FRONT-END DEVELOPER</h3>
+              <p>Trazimo Front End Developera sa odlicnim poznavanjem i iskustvom vise od godinu dana u Drupalu.</p>
+              <div class="b-position__description-skill">
+                  <span>#HTML</span>
+                  <span>#CSS</span>
+                  <span>#JavaScript</span>
+              </div>
+          </div>
+          <div class="b-position__apply"><button class="c-btn c-btn--bordered">PRIJAVI SE</button></div>
+      </div>
  </div>
-   </div>
-  <!--
+ <div class="b-position">
+      <div class="b-position__content clearfix">
+          <div class="b-position__description">
+            <h3>PROJECT MANAGER</h3>
+            <p>Trazimo Project Managera sa odlicnim organizacionim sposobnostima i iskustvom vodjenja digital projekata...</p>
+            <div class="b-position__description-skill">
+                <span>#HTML</span>
+                <span>#CSS</span>
+                <span>#Balsamiq</span>
+                <span>#UXpin</span>
+            </div>
+          </div>
+          <div class="b-position__apply"><button class="c-btn c-btn--bordered">PRIJAVI SE</button></div>
+      </div>
+ </div>
+ <div class="b-position">
+      <div class="b-position__content clearfix">
+          <div class="b-position__description">
+            <h3>UX/UI DESIGNER</h3>
+            <p>Ako si kreativan i volis da radis u timu, posedujes visegodisnje iskustvo iz oblasti digital dizajna, ux/ui...</p>
+            <div class="b-position__description-skill">
+                <span>#Sketch</span>
+                <span>#AdobeXD</span>
+                <span>#Photoshop</span>
+                <span>#Balsamiq</span>
+            </div>
+          </div>
+          <div class="b-position__apply"><button class="c-btn c-btn--bordered">PRIJAVI SE</button></div>
+      </div>
+ </div>
+</div>
 
+<div class="b-work__load-more"><button class="c-btn">UČITAJ JOŠ POZICIJA</button></div>
 
-        -->
+</div>
+</div>
 
+<!--end poslovi -->
 
+<!-- start contact -->
+
+<div id="contact" class="b-contact">
+<div class="main-wrapper">
+    <div class="b-contact__intro">
+        <span>DIWANEE BEOGRAD</span>
+        <h2>DIGITAL MEDIA COMPANY</h2>
+        <p>Diwanee je digitalna medijska kompanija, okrenuta velikoj ženskoj publici na Bliskom istoku. Naša kompanija stvara i distribuira originalan, visokokvalitetan i pouzdan sadržaj. Diwanee je takođe partner sa YouTube-om, i zajedno smo pokrenuli kanal "DUNIATI", nudeći na taj način sve vrste bogatog video sadržaja za arapske žene širom sveta.<br><br>Radimo sa velikim brojem brendova radi povećanja angažovanja, a sve u digitalnom prostoru. Diwanee je partner i sa velikim regionalnim vlasnicima medija, kako bismo upravljali svojom digitalnom prisutnošću.</p>
+    </div>
+        <div class="b-contact__social-m">
+            <div class="b-contact__social-m__title">PRATITE NAS</div>
+            <div class="b-contact__social-m__container clearfix">
+                <div class="b-contact__social-m__icon"><a href="https://twitter.com/diwanee?lang=en" target="_blank"><img  src="images/Twitter.png" alt="Twitter"></a></div>
+                <div class="b-contact__social-m__icon"><a href="https://www.facebook.com/Diwanee/" target="_blank"><img  src="images/Facebook.png" alt="Facebook"></a></div>
+            </div>
+        </div>
+
+</div>
+</div>
+<!--end contact -->
+<!--start footer -->
+<footer class="b-footer clearfix">
+<div class="main-wrapper">
+<div class="b-footer__location clearfix">
+  <div class="b-footer__city">
+    <div class="b-footer__city-icon"><img src="images/Pointer.png" alt="DUBAI"></div>
+    <span>DUBAI</span>
+    <ul>
+      <li>Office Park, Building Block A</li>
+      <li>Units A301-A302</li>
+      <li>Dubai Internet City</li>
+      <li>T: 971 4 - 434 7147</li>
+    </ul>
+  </div>
+  <div class="b-footer__city">
+      <div class="b-footer__city-icon"><img src="images/Pointer.png" alt="BEIRUT"></div>
+      <span>BEIRUT</span>
+      <ul>
+          <li>Dora, Seaside Road,</li>
+          <li>BCP bldg (Facing Demco Steel) </li>
+          <li>Mobile: 961 76 - 866 700</li>
+          <li>Fax: 961 1 - 244 846</li>
+      </ul>
+  </div>
+
+    <div class="b-footer__city">
+        <div class="b-footer__city-icon"><img src="images/Pointer.png" alt="BELGRADE"></div>
+        <span>BELGRADE</span>
+        <ul>
+            <li>Kneza Milosa 3,</li>
+            <li>11000 Beograd </li>
+            <li>Tel: +381 11 - 3340 117</li>
+        </ul>
+    </div>
+</div>
+<div class="b-footer__bottom clearfix">
+  <div class="b-footer__bottom__links clearfix">
+      <div class="b-footer__bottom-link"><a href="https://www.linkedin.com/company/diwanee" target="_blank"><img src="images/Linkedin.png" alt="Linkedin"></a></div>
+      <div class="b-footer__bottom-link"><a href="https://twitter.com/diwanee?lang=en" target="_blank"><img src="images/Twitt.png" alt="Twitter"></a></div>
+      <div class="b-footer__bottom-link">
+        <span><a href="https://www.diwanee.com/" target="_blank">www.diwanee.com</a></span>
+      </div>
+  </div>
+  <div class="b-footer__bottom__copyright">
+      <p>COPYRIGHT © 2015  DIWANEEE SERBIA ALL RIGHTS RESERVED</p>
+  </div>
+</div>
+</div>
+</footer>
+<!--end footer -->
+</div>
 </body>
 <script src="js/file.js"></script>
 </html>

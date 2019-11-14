@@ -1,0 +1,91 @@
+.b-about{
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  display: block;
+  &__block{
+    position: relative;
+    margin:auto;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    background-color: $light-grey;
+    @include breakpoint(tablet){
+      padding-top: 4.2rem;
+      width: 33.33%;
+      float: left;
+    }
+    @include breakpoint(desktop){
+      padding-top: 9.5rem;
+      width: 33.33%;
+      float: left;
+    }
+
+    &--grey {
+      background-color: $dark-grey;
+    }
+  }
+  &__icon{
+    display: block;
+    text-align: center;
+    margin: 0 auto 2rem;
+    width: 100%;
+    img{
+      display: inline-block;
+    }
+  }
+  &__content{
+    text-align: center;
+    display: block;
+    margin: auto;
+
+    h1{
+      position: relative;
+      padding-top: 1rem;
+      padding-bottom: 1.1rem;
+      color: $black;
+      font-family: $roboto;
+      @include lineHeightRem (24, 17, 24);
+      @include fontSizeRem (20, 20, 18);
+      font-weight: 700;
+      letter-spacing: 0.4rem;
+      @include breakpoint(tablet){
+        padding-top: 1rem;
+      }
+      @include breakpoint(desktop){
+        padding-top: 1.8rem;
+        letter-spacing: 0.3rem;
+      }
+      &::after{
+        position: absolute;
+        content:"";
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 5.5rem;
+        border-bottom: 2px solid $darker-grey;
+        width: 3.6rem;
+        @include breakpoint(tablet){
+          top: 5.7rem;
+        }
+        @include breakpoint(desktop){
+          top: 8rem;
+          width: 5rem;
+        }
+        }
+     }
+     p{
+      padding: 5.1rem 1rem 2rem 1rem;
+      @include breakpoint(tablet){
+        padding: 3.7rem 2rem 2rem 2rem;
+      }
+      @include breakpoint(desktop){
+        padding: 6.3rem 4.5rem 2rem 4.5rem;
+      }
+      color: $font-dark-grey;
+      font-family: $roboto;
+      @include lineHeightRem (30, 32, 24);
+      @include fontSizeRem (18, 17, 16);
+      font-weight: 300;
+     }
+  }
+}

@@ -1,0 +1,85 @@
+$site-mobile: 320;
+$site-tablet: 1023;
+$site-desktop: 1440;
+
+
+
+@mixin breakpoint($size) {
+    @if $size == mobile {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+    @else if $size == tablet {
+        @media (min-width: 768px) and (max-width: 1023px) {
+            @content;
+        }
+    }
+    @else if $size == desktop {
+        @media (min-width: 1024px) {
+            @content;
+        }
+    }
+    @else if $size == desktopLarge {
+		@media (min-width: 1441px) {
+			@content;
+		}
+	}
+}
+
+@mixin fontSizeVw($mobile-font-size, $tablet-font-size, $desktop-font-size) {
+	font-size: #{$desktop-font-size}px;
+	@include breakpoint(mobile) {
+		font-size: calculateVw($mobile-font-size, $site-mobile);
+	}
+	@include breakpoint(tablet) {
+		font-size: calculateVw($tablet-font-size, $site-tablet);
+	}
+	@include breakpoint(desktop) {
+		font-size: calculateVw($desktop-font-size, $site-desktop);
+	}
+	@include breakpoint(desktopLarge) {
+		font-size: 10px;
+	}
+}
+
+//Line height vw
+@mixin lineHeightVw($mobile-font-size, $tablet-font-size, $desktop-font-size) {
+	line-height: #{$desktop-font-size}px;
+	@include breakpoint(mobile) {
+		line-height: calculateVw($mobile-font-size, $site-mobile);
+	}
+	@include breakpoint(tablet) {
+		line-height: calculateVw($tablet-font-size, $site-tablet);
+	}
+	@include breakpoint(desktop) {
+		line-height: calculateVw($desktop-font-size, $site-desktop);
+	}
+}
+
+//Font size rem 
+@mixin fontSizeRem($mobile-font-size, $tablet-font-size, $desktop-font-size) {
+	@include breakpoint(mobile) {
+		font-size: calculateRem($mobile-font-size);
+	}
+	@include breakpoint(tablet) {
+		font-size: calculateRem($tablet-font-size);
+	}
+	@include breakpoint(desktop) {
+		font-size: calculateRem($desktop-font-size);
+	}
+}
+
+//Line height rem
+@mixin lineHeightRem($mobile-line-height, $tablet-line-height, $desktop-line-height) {
+	@include breakpoint(mobile) {
+		line-height: calculateRem($mobile-line-height);
+	}
+	@include breakpoint(tablet) {
+		line-height: calculateRem($tablet-line-height);
+	}
+	@include breakpoint(desktop) {
+		line-height: calculateRem($desktop-line-height);
+	}
+}
+

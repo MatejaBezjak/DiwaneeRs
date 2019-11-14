@@ -1,0 +1,142 @@
+.b-contact{
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-bottom: 7.3rem;
+  @include breakpoint(tablet){
+    margin-bottom: 13.7rem;
+  }
+  @include breakpoint(desktop){
+    margin-bottom: 10.7rem;
+  }
+
+  &__intro{
+    position: relative;
+    margin:auto;
+    padding: 2.4rem 2rem 1rem 2rem;
+    text-align: center;
+    background-color: $light-grey;
+    @include breakpoint(tablet){
+      padding: 8.5rem 0rem 1rem 2rem;
+    }
+    @include breakpoint(desktop){
+      padding: 8.1rem 0rem 1rem 0rem;
+    }
+  span{
+      color: $font-light-grey;
+      font-family: $roboto;
+      @include lineHeightRem (34, 34, 34);
+      @include fontSizeRem (14, 14, 14);
+      font-weight: 500;
+      letter-spacing: 0.2em;
+    }
+    h2{
+      padding: 2.2rem;
+      color: $black;
+      font-family: $roboto;
+      @include lineHeightRem (42, 34, 34);
+      @include fontSizeRem (40, 50, 50);
+      font-weight: 500;
+      @include breakpoint(tablet){
+        padding: 4rem 0 0 0;
+        letter-spacing: 0.001em;
+      }
+      @include breakpoint(desktop){
+        padding: 3.9rem 0 0 0;
+        letter-spacing: 0.1rem;
+      }
+      &::after{
+        position: absolute;
+        content:"";
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 24.2rem;
+        border-bottom: 2px solid $red;
+        width: 5.6rem;
+        @include breakpoint(tablet){
+          top: 24.5rem;
+        }
+        @include breakpoint(desktop){
+          top: 24.1rem;
+        }
+      }
+    }
+    p{
+      padding: 5.4rem 0.1rem 4rem 0.8rem;
+      color: $black;
+      font-family: $roboto;
+      text-align: left;
+      @include lineHeightRem (30, 28, 29);
+      @include fontSizeRem (18, 14, 13.6);
+      font-weight: 300;
+      @include breakpoint(tablet){
+        padding: 11.1rem 8.1rem 4.8rem 8rem;
+      }
+      @include breakpoint(desktop){
+        padding: 11.2rem 31rem 5rem 30.8rem;
+        letter-spacing: 0.01em;
+      }
+    }
+  }
+  &__social-m{
+      max-width: 100%;
+      position: relative;
+      margin: auto;
+      display: block;
+      text-align: center;
+
+      &__title{
+        padding-top: 7rem;
+        padding-bottom: 2.4rem;
+        font-family: $roboto;
+        font-weight: 400;
+        letter-spacing: 0.17em;
+        color: $font-light-grey;
+        @include lineHeightRem (34, 28, 28);
+        @include fontSizeRem (14, 14, 14);
+        @include breakpoint(tablet){
+          padding-top: 8.3rem;
+          padding-bottom: 1.7rem;
+        }
+        @include breakpoint(desktop){
+          padding-top: 9.3rem;
+          padding-bottom: 1.8rem;
+        }
+      }
+      &__container{
+        position: relative;
+        display: inline-block;
+      }
+      &__icon{
+        float: right;
+        &:nth-of-type(1){
+          margin-right: 0.6rem;
+        }
+        &:nth-of-type(2){
+          margin-left: 0.6rem;
+        }
+
+        @include breakpoint(tablet){
+          &:nth-of-type(1){
+            margin-right: 0.5rem;
+          }
+          &:nth-of-type(2){
+            margin-left: 0.5rem;
+          }
+        }
+        @include breakpoint(desktop){
+          &:nth-of-type(1){
+            margin-right: 0.5rem;
+          }
+          &:nth-of-type(2){
+            margin-left: 0.5rem;
+          }
+        }
+        &:nth-of-type(1){
+          float: left;
+        }
+      }
+  }
+}
