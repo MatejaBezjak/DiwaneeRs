@@ -70,11 +70,11 @@
           margin-top: 1.2rem;
           margin-left: 0.7rem;
           @include breakpoint(tablet){
-            margin-top: 2.2rem;
+            margin-top: 2.1rem;
             margin-left: 0;
           }
           @include breakpoint(desktop){
-            margin-top: 2.3rem;
+            margin-top: 2.4rem;
             margin-left: 0;
           }
       }
@@ -86,7 +86,7 @@
     display: block;
     @include breakpoint(tablet){
       padding-left: 4.9rem;
-      padding-right: 4rem;
+      padding-right: 4.6rem;
       background-color: $footer-black;
     }
     @include breakpoint(desktop){
@@ -100,11 +100,12 @@
       width: 100%;
       margin: auto;
       padding-left: 3.4rem;
-      margin-bottom: 3.1rem;
+      margin-bottom: 2.3rem;
       @include breakpoint(tablet){
         width: 28%;
         margin-top: 2.6rem;
         margin-bottom: 0;
+        padding-left: 3.8rem;
         float: right;
       }
       @include breakpoint(desktop){
@@ -119,11 +120,18 @@
       margin-right: 3rem;
       float: left;
       &:nth-of-type(3){
-        margin-right: 0;
+        margin: 1rem 0 0 2.1rem;
+        @include breakpoint(tablet){
+          margin: 0;
+        }
+        @include breakpoint(desktop){
+          margin: 0;
+          margin-top: 0.2rem;
+        }
       }
       img {
         width: 3.1rem;
-        height: 2.9rem;
+        //height: 2.9rem;
         @include breakpoint(tablet){
           width: 2.1rem;
           height: 2rem;
@@ -155,14 +163,14 @@
       @include breakpoint(tablet){
         width: 50%;
         float: left;
-        padding-top: 2.4rem;
-        padding-bottom: 2.4rem;
+        padding-top: 2.1rem;
+        padding-bottom: 2.1rem;
         text-align: left;
       }
       @include breakpoint(desktop){
         width: 50%;
         float: left;
-        padding-top: 2.3rem;
+        padding-top: 2.4rem;
         padding-bottom: 2.3rem;
         text-align: left;
       }

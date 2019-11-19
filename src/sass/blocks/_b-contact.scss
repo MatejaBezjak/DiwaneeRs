@@ -3,25 +3,26 @@
   position: relative;
   margin: auto;
   display: block;
-  margin-bottom: 7.3rem;
+  margin-bottom: 7rem;
   @include breakpoint(tablet){
     margin-bottom: 13.7rem;
   }
   @include breakpoint(desktop){
-    margin-bottom: 10.7rem;
+    margin-bottom: 10.6rem;
   }
 
   &__intro{
     position: relative;
     margin:auto;
-    padding: 2.4rem 2rem 1rem 2rem;
+    padding-top: 3rem;
     text-align: center;
     background-color: $light-grey;
     @include breakpoint(tablet){
-      padding: 8.5rem 0rem 1rem 2rem;
+      padding: 7.8rem 0rem 8.1rem 2rem;
+      margin-bottom: 0.2rem;
     }
     @include breakpoint(desktop){
-      padding: 8.1rem 0rem 1rem 0rem;
+      padding: 8.1rem 0rem 8rem 0rem;
     }
   span{
       color: $font-light-grey;
@@ -29,21 +30,24 @@
       @include lineHeightRem (34, 34, 34);
       @include fontSizeRem (14, 14, 14);
       font-weight: 500;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.15em;
     }
     h2{
-      padding: 2.2rem;
+      //padding: 2.2rem;
+      padding: 2.3rem 2.2rem 2.2rem 2.2rem;
       color: $black;
       font-family: $roboto;
-      @include lineHeightRem (42, 34, 34);
+      line-height: 1.05em;
+      letter-spacing: 0.02em;
+      //@include lineHeightRem (42, 34, 34);
       @include fontSizeRem (40, 50, 50);
       font-weight: 500;
       @include breakpoint(tablet){
-        padding: 4rem 0 0 0;
+        padding: 3.5rem 0 0 0;
         letter-spacing: 0.001em;
       }
       @include breakpoint(desktop){
-        padding: 3.9rem 0 0 0;
+        padding: 3rem 0 0 0;
         letter-spacing: 0.1rem;
       }
       &::after{
@@ -52,11 +56,11 @@
         left: 0;
         right: 0;
         margin: auto;
-        top: 24.2rem;
+        top: 24.8rem;
         border-bottom: 2px solid $red;
         width: 5.6rem;
         @include breakpoint(tablet){
-          top: 24.5rem;
+          top: 24.1rem;
         }
         @include breakpoint(desktop){
           top: 24.1rem;
@@ -64,7 +68,7 @@
       }
     }
     p{
-      padding: 5.4rem 0.1rem 4rem 0.8rem;
+      padding: 5.3rem 1.5rem 3.4rem 2.7rem;
       color: $black;
       font-family: $roboto;
       text-align: left;
@@ -72,10 +76,10 @@
       @include fontSizeRem (18, 14, 13.6);
       font-weight: 300;
       @include breakpoint(tablet){
-        padding: 11.1rem 8.1rem 4.8rem 8rem;
+        padding: 10.3rem 8.1rem 4.8rem 8rem;
       }
       @include breakpoint(desktop){
-        padding: 11.2rem 31rem 5rem 30.8rem;
+        padding: 10.6rem 31rem 5rem 30.8rem;
         letter-spacing: 0.01em;
       }
     }
