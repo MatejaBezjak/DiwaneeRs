@@ -34,7 +34,6 @@
       color: black;
       padding-bottom: 4.5rem;
       font-family: $roboto;
-      //@include lineHeightRem (58, 58, 58);
       @include fontSizeRem (60, 70, 80);
       font-weight: 500;
       letter-spacing: 0.02em;

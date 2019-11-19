@@ -10,8 +10,6 @@
     position: relative;
     margin:auto;
     padding-top: 5rem;
-
-    //padding-bottom: 3.5rem;
     background-color: $light-grey;
     @include breakpoint(tablet){
       padding-top: 4.2rem;
@@ -31,7 +29,6 @@
   &__icon{
     display: block;
     text-align: center;
-    //margin: 0 auto 2rem;
     margin: auto;
     width: 100%;
     margin-bottom: 2.8rem;
@@ -89,21 +86,12 @@
       @include breakpoint(desktop){
         padding-bottom: 7.3rem;
       }
-      &.b-about__highlighted-title{
-        @include breakpoint(tablet){
-          //padding-top: 0.5rem;
-        }
-        @include breakpoint(desktop){
-          //padding-top: 1.3rem;
-        }
-      }
       &::after{
         position: absolute;
         content:"";
         left: 0;
         right: 0;
         margin: auto;
-        //top: 5.5rem;
         top: 5.1rem;
         border-bottom: 2px solid $darker-grey;
         width: 3.6rem;

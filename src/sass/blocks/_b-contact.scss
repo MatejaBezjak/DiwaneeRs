@@ -24,7 +24,7 @@
     @include breakpoint(desktop){
       padding: 8.1rem 0rem 8rem 0rem;
     }
-  span{
+    span{
       color: $font-light-grey;
       font-family: $roboto;
       @include lineHeightRem (34, 34, 34);
@@ -33,13 +33,11 @@
       letter-spacing: 0.15em;
     }
     h2{
-      //padding: 2.2rem;
       padding: 2.3rem 2.2rem 2.2rem 2.2rem;
       color: $black;
       font-family: $roboto;
       line-height: 1.05em;
       letter-spacing: 0.02em;
-      //@include lineHeightRem (42, 34, 34);
       @include fontSizeRem (40, 50, 50);
       font-weight: 500;
       @include breakpoint(tablet){

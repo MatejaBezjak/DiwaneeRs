@@ -38,7 +38,6 @@
       padding-top: 0.8rem;
       color: $black;
       font-family: $roboto;
-      //@include lineHeightRem (24, 0, 24);
       @include fontSizeRem (40, 50, 50);
       font-weight: 500;
       @include breakpoint(tablet){
