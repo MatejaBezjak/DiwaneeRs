@@ -1,8 +1,9 @@
 .b-header{
-  position: absolute;
+  position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 6;
   padding-top: 1rem;
+  background-color: $overlay;
   @include breakpoint(tablet){
     padding-top: 2.1rem;
     padding-left: 3.9rem;
@@ -89,19 +90,7 @@
         height: 40.9rem;
       }
     }
-    ul{
-      margin-top: 10rem;
-      margin-bottom: 9.3rem;
-      @include breakpoint(tablet){
-        margin-top: 8.1rem;
-        margin-bottom: 3.4rem;
-      }
-      @include breakpoint(desktop){
-        margin-top: 0;
-        margin-bottom: 0;
-        float: right;
-      }
-    }
+
     li{
       @include breakpoint(desktop){
         display: inline;
@@ -113,21 +102,43 @@
           padding-right: 4rem;
         }
       }
-      a{
-        color: $font-dropdown;
-        font-family: $roboto;
-        font-weight: 300;
-        text-decoration: none;
-        @include lineHeightVw (78, 78, 0);
-        @include fontSizeRem (24, 24, 14);
-        @include breakpoint(desktop){
-          color: $black;
-          font-weight: 400;
-          letter-spacing: 0.04em;
+    
+    }
+  }
+  &__list{
+    margin-top: 10rem;
+    margin-bottom: 9.3rem;
+    @include breakpoint(tablet){
+      margin-top: 8.1rem;
+      margin-bottom: 3.4rem;
+    }
+    @include breakpoint(desktop){
+      margin-top: 0;
+      margin-bottom: 0;
+      float: right;
+    }
+  }
+  &__link{
+      color: $font-dropdown;
+      font-family: $roboto;
+      font-weight: 300;
+      text-decoration: none;
+      @include lineHeightVw (78, 78, 1);
+      @include fontSizeRem (24, 24, 14);
+      @include breakpoint(desktop){
+        color: $black;
+        font-weight: 400;
+        letter-spacing: 0.04em;
+        &:hover{
+          opacity: 0.5;
+        }
+        &.active{
+          @include breakpoint(desktop){
+            color: $red;
+          }
         }
       }
     }
-  }
   &__contact{
     width: 100%;
     display: inline-block;

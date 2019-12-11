@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="../dist/css/style.css">
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</head>
+<body>
+    <div id="wrapper">
+      <div class = "wrapper-full">
+        <header class="b-header">
+          <div class='main-wrapper'>
+            <div class="b-header__container">
+              <div class="b-header__components clearfix">
+                <div class="b-header__logo" ><a href="index.html"><img id="diwLogo" src="images/Logo.png"  alt="Diwanee"/></a></div>
+                <div id= "burger" class="b-header__burger">
+                  <div class="b-header__burger-line1"></div>
+                  <div class="b-header__burger-line2"></div>
+                  <div class="b-header__burger-line3"></div>
+                </div>
+              </div>
+
+              <nav id="dropdown" class="b-header__navigation">
+                <ul class="b-header__list b-header__list-contactp">
+                  <li><a class="b-header__link" href="index.html" title="">O NAMA</a></li>
+                  <li><a class="b-header__link" href="index.html">POSLOVI</a></li>
+                </ul>
+                <div class="b-header__contact clearfix">
+                  <span>PRATITE NAS</span>
+                  <div class="b-header__social clearfix">
+                    <div class="b-header__social-icon"><a href="https://twitter.com/diwanee?lang=en" target="_blank"><img src="images/Twitt-nav.png" alt="Twitter"></a></div>
+                    <div class="b-header__social-icon"><a href="https://www.facebook.com/Diwanee/" target="_blank"><img src="images/Face-nav.png" alt="Facebook"></a></div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="b-hero">
+            <div class="b-hero__container wrapper-full">
+              <div class="b-hero__content">
+
+                <h1 class="b-hero__content-title">DIWANEE SERBIA</h1>
+
+                <h2 class="b-hero__content-description">Digital Media Agency always looking for motivated,</br> multi-talented, and organized people to join our</br>
+                diverse team.</h2>
+              </div>
+             </div>
+      </div>
+        <div class="b-form main-wrapper">
+          <div class="b-form__container">
+                <div class="b-form__intro">
+                    <h2 class="b-form__intro-title">KONTAKT</h2>
+                </div>
+                <form id="form" class="b-form__content" action="action_page.php" method="GET" >
+                          <div class="b-form__field">
+                              <span class="b-form__field-label"><label for="name">Ime</label></span>
+                              <span id="field" class="b-form__field-input">
+                                <input class="b-form__field-input--text" id="firstName" type="text" placeholder="Unesite podatke..." name="firstName" >
+                                <span id="invalidImg" class="b-form__field-input--icon"><img src="images/invalid.png" alt="invalid"></span>
+
+                                <span id="validImg" class="b-form__field-input--icon"><img src="images/valid.png" alt="valid"></span>
+                              </span>
+                              <span id="errorFirstName" class="b-form__field-errors"></span>
+
+                          </div>
+                          <div class="b-form__field">
+                              <span class="b-form__field-label"><label for="lastName">Prezime</span>
+                              <span id="field" class="b-form__field-input">
+                                <input class="b-form__field-input--text" id="lastName" type="text" placeholder="Unesite podatke..." name="lastName" >
+                                <span id="invalidImg" class="b-form__field-input--icon"><img src="images/invalid.png" alt="invalid"></span>
+
+                                <span id="validImg" class="b-form__field-input--icon"><img src="images/valid.png" alt="valid"></span>
+                              </span>
+                              <span id="errorLastname" class="b-form__field-errors"></span>
+                          </div>
+
+                          <div class="b-form__field">
+                              <span  class="b-form__field-label"><label for="email">E-mail</label></span>
+                              <span  id="field" class="b-form__field-input">
+                                <input class="b-form__field-input--text" id="email" type="text" placeholder="Unesite e-mail adresu" name="email" >
+                                <span id="invalidImg" class="b-form__field-input--icon"><img src="images/invalid.png" alt="invalid"></span>
+
+                                <span id="validImg" class="b-form__field-input--icon"><img src="images/valid.png" alt="valid"></span>
+                              </span>
+                              <span id="errorEmail" class="b-form__field-errors"></span>
+
+                          </div>
+
+                          <div class="b-form__field b-form__msg-field">
+                              <span class="b-form__field-label">Poruka</span>
+                              <span id="field" class="b-form__field-input">
+                                <textarea class="b-form__field-input--text" id="msg" name="user_message" rows="15" ></textarea>
+                                <span id="invalidImg" class="b-form__field-input--icon"><img src="images/invalid.png" alt="invalid"></span>
+
+                                <span id="validImg" class="b-form__field-input--icon"><img src="images/valid.png" alt="valid"></span>
+                              </span>
+                              <span id="errorMssgField" class="b-form__field-errors"></span>
+                          </div>
+                          <div class="b-form__button">
+                              <button id="submit" class="c-btn c-btn--bordered" type="button" >POSALJI</button>
+
+                          </div>
+
+                </form>
+          </div>
+        </div>
+        <div class="b-contact__social-m b-contact__social-m-contact-page">
+            <div class="b-contact__social-m__title">PRATITE NAS</div>
+            <div class="b-contact__social-m__container clearfix">
+                <div class="b-contact__social-m__icon"><a href="https://twitter.com/diwanee?lang=en" target="_blank"><img  src="images/Twitter.png" alt="Twitter"></a></div>
+                <div class="b-contact__social-m__icon"><a href="https://www.facebook.com/Diwanee/" target="_blank"><img  src="images/Facebook.png" alt="Facebook"></a></div>
+            </div>
+        </div>
+
+</div>
+</div>
+<!--end contact -->
+<!--start footer -->
+<div class = "wrapper-full">
+<footer class="b-footer clearfix">
+<div class="main-wrapper">
+<div class="b-footer__location clearfix">
+  <div class="b-footer__city">
+    <div class="b-footer__city-icon"><img src="images/Pointer.png" alt="DUBAI"></div>
+    <span>DUBAI</span>
+    <ul>
+      <li>Office Park, Building Block A</li>
+      <li>Units A301-A302</li>
+      <li>Dubai Internet City</li>
+      <li>T: 971 4 - 434 7147</li>
+    </ul>
+  </div>
+  <div class="b-footer__city">
+      <div class="b-footer__city-icon"><img src="images/Pointer.png" alt="BEIRUT"></div>
+      <span>BEIRUT</span>
+      <ul>
+          <li>Dora, Seaside Road,</li>
+          <li>BCP bldg (Facing Demco Steel) </li>
+          <li>Mobile: 961 76 - 866 700</li>
+          <li>Fax: 961 1 - 244 846</li>
+      </ul>
+  </div>
+
+    <div class="b-footer__city">
+        <div class="b-footer__city-icon"><img src="images/Pointer.png" alt="BELGRADE"></div>
+        <span>BELGRADE</span>
+        <ul>
+            <li>Kneza Milosa 3,</li>
+            <li>11000 Beograd </li>
+            <li>Tel: +381 11 - 3340 117</li>
+        </ul>
+    </div>
+</div>
+<div class="b-footer__bottom clearfix">
+  <div class="b-footer__bottom__links clearfix">
+      <div class="b-footer__bottom-link"><a href="https://www.linkedin.com/company/diwanee" target="_blank"><img src="images/Linkedin.png" alt="Linkedin"></a></div>
+      <div class="b-footer__bottom-link"><a href="https://twitter.com/diwanee?lang=en" target="_blank"><img src="images/Twitt.png" alt="Twitter"></a></div>
+      <div class="b-footer__bottom-link">
+        <span><a href="https://www.diwanee.com/" target="_blank">www.diwanee.com</a></span>
+      </div>
+  </div>
+  <div class="b-footer__bottom__copyright">
+      <p>COPYRIGHT © 2015  DIWANEEE SERBIA ALL RIGHTS RESERVED</p>
+  </div>
+</div>
+</div>
+</footer>
+
+    </div>
+</body>
+<script src="../dist/js/all.js"></script>
+</html>

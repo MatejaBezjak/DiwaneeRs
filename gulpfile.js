@@ -2,7 +2,8 @@ const gulp = require('gulp');
 // const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
 const sass = require('gulp-sass');
-// //const concat = require('gulp-cancat');
+const concat = require('gulp-concat');
+const babel = require('gulp-babel');
 
 gulp.task('message', done => {
     return console.log('Gulp is running...');
@@ -20,11 +21,38 @@ gulp.task('copyHtml', done => {
     done();
 });
 
-// //Copy All HTML
-// gulp.task('copyHtml', function(){
-//   gulp.src('src/*.html')
-//       .pipe(gulp.dest('dist'));
-// });
+gulp.task('sass', done => {
+  gulp.src('src/sass/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('dist/css'));
+  done();
+});
+
+gulp.task('babel', done => {
+	gulp.src('src/js/*.js')
+		.pipe(babel({
+			presets: ['@babel/preset-env']
+		}))
+    .pipe(gulp.dest('dist/js'));
+    done();
+  });
+
+  gulp.task('concat', done => {
+    gulp.src('src/js/*.js')
+    .pipe(concat('all.js'))
+    .pipe(gulp.dest('dist/js'));
+    done();
+});
+
+gulp.task('minify', async function(){
+  gulp.src('src/js/*.js')
+      .pipe(uglify())
+      .pipe(gulp.dest('dist/js'));
+});
+
+
+
+
 
 // gulp.task('imageMin', done => {
 //     gulp.src('src/images/*')
@@ -40,45 +68,13 @@ gulp.task('copyHtml', done => {
 // 		.pipe(gulp.dest('dist/images'))
 // );
 
-gulp.task('minify', done => {
-    gulp.src('src/js/*.js')
-      .pipe(uglify())
-      .pipe(gulp.dest('dist/js'));
-    done();
-});
 
-// //Optimize js
-// gulp.task('minify', function(){
-//   gulp.src('src/js/*.js')
-//       .pipe(uglify())
-//       .pipe(gulp.dest('dist/js'));
-// });
 
-gulp.task('sass', done => {
-    gulp.src('src/sass/*.scss')
-      .pipe(sass().on('error', sass.logError))
-      .pipe(gulp.dest('dist/css'));
-    done();
-});
 
-//Compile Sass
-// gulp.task('sass', function(){
-//   gulp.src('src/sass/*.scss')
-//       .pipe(sass().on('error', sass.logError))
-//       .pipe(gulp.dest('dist/css'));
-// });
-
-// Scripts (if more js files + dodati file u src, iz default izbrisati minify
-// gulp.task('scripts', async function(){
-//   gulp.src('src/js/*.js')
-//       .pipe(concat('main.js'))
-//       .pipe(uglify())
-//       .pipe(gulp.dest('dist/js'));
-// });
+//gulp.task('default', gulp.series('copyHtml', 'minify', 'sass'));
 
 // gulp.task('default', ['message', 'copyHtml', 'imageMin', 'minify', 'sass']);
 
-gulp.task('default', gulp.series('copyHtml', 'minify', 'sass'));
 
 // gulp.task('watch, async function(){
 //     gulp.watch('src/js/*.js', ['scripts']);

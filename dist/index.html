@@ -9,45 +9,48 @@
 </head>
 <body>
 <div id="wrapper">
-  <header class="b-header">
+  <div class = "wrapper-full">
+    <header class="b-header">
       <div class='main-wrapper'>
         <div class="b-header__container">
           <div class="b-header__components clearfix">
-              <div class="b-header__logo"><img id="diwLogo"src="images/Logo.png"  alt="Diwanee"/></div>
-              <div id= "burger" class="b-header__burger">
-                <div class="b-header__burger-line1"></div>
-                <div class="b-header__burger-line2"></div>
-                <div class="b-header__burger-line3"></div>
-              </div>
-          </div>
-
-        <nav id="dropdown" class="b-header__navigation">
-          <ul >
-            <li><a href="#about">O NAMA</a></li>
-            <li><a href="#work">POSLOVI</a></li>
-            <li><a href="#contact">KONTAKT</a></li>
-          </ul>
-          <div class="b-header__contact clearfix">
-            <span>PRATITE NAS</span>
-            <div class="b-header__social clearfix">
-              <div class="b-header__social-icon"><a href="https://twitter.com/diwanee?lang=en" target="_blank"><img src="images/Twitt-nav.png" alt="Twitter"></a></div>
-              <div class="b-header__social-icon"><a href="https://www.facebook.com/Diwanee/" target="_blank"><img src="images/Face-nav.png" alt="Facebook"></a></div>
+            <div class="b-header__logo" ><img id="diwLogo" src="images/Logo.png"  alt="Diwanee"/></div>
+            <div id= "burger" class="b-header__burger">
+              <div class="b-header__burger-line1"></div>
+              <div class="b-header__burger-line2"></div>
+              <div class="b-header__burger-line3"></div>
             </div>
           </div>
-        </nav>
+
+          <nav id="dropdown" class="b-header__navigation">
+            <ul class="b-header__list">
+              <li><a class="b-header__link" href="#about" title="">O NAMA</a></li>
+              <li><a class="b-header__link" href="#work">POSLOVI</a></li>
+              <li><a class="b-header__link" href="contact_page.html">KONTAKT</a></li>
+            </ul>
+            <div class="b-header__contact clearfix">
+              <span>PRATITE NAS</span>
+              <div class="b-header__social clearfix">
+                <div class="b-header__social-icon"><a href="https://twitter.com/diwanee?lang=en" target="_blank"><img src="images/Twitt-nav.png" alt="Twitter"></a></div>
+                <div class="b-header__social-icon"><a href="https://www.facebook.com/Diwanee/" target="_blank"><img src="images/Face-nav.png" alt="Facebook"></a></div>
+              </div>
+            </div>
+          </nav>
+        </div>
       </div>
-      </div>
-  </header>
+    </header>
+  </div>
+
 <!-- end header-->
 
 <!-- start hero-->
 <div class="b-hero">
-      <div class="main-wrapper">
-        <div class="b-hero__content">
+      <div class="b-hero__container wrapper-full">
+        <div class="b-hero__content ">
 
-          <h1 >DIWANEE SERBIA</h1>
+          <h1 class="b-hero__content-title">DIWANEE SERBIA</h1>
 
-          <h2>Digital Media Agency always looking for motivated,</br> multi-talented, and organized people to join our</br>
+          <h2 class="b-hero__content-description">Digital Media Agency always looking for motivated,</br> multi-talented, and organized people to join our</br>
           diverse team.</h2>
         </div>
        </div>
@@ -62,24 +65,24 @@
 <div class="b-about__block">
   <div class="b-about__icon b-about__icon-triangle"><img src="images/triangle.png" alt="Triangle"></div>
   <div class="b-about__content">
-    <h1>DEVELOPMENT</h1>
-    <p>Front-end Developers play a critical role in most projects at Code and Theory. They are actively involved throughout the project lifecycle, often times starting with rapid prototypes early in the design phase. </p>
+    <h1 class="b-about__content-title">DEVELOPMENT</h1>
+    <p class="b-about__content-description">Front-end Developers play a critical role in most projects at Code and Theory. They are actively involved throughout the project lifecycle, often times starting with rapid prototypes early in the design phase. </p>
   </div>
 </div>
 
 <div class="b-about__block b-about__block--grey">
   <div class="b-about__icon"><img  src="images/circle.png" alt="Circle"></div>
   <div class="b-about__content">
-    <h1 class="b-about__highlighted-title">WEB & UI DESIGN</h1>
-    <p>Front-end Developers play a critical role in most projects at Code and Theory. They are actively involved throughout the project lifecycle, often times starting with rapid prototypes early in the design phase. </p>
+    <h1 class="b-about__content-title">WEB & UI DESIGN</h1>
+    <p class="b-about__content-description">Front-end Developers play a critical role in most projects at Code and Theory. They are actively involved throughout the project lifecycle, often times starting with rapid prototypes early in the design phase. </p>
   </div>
 </div>
 
 <div class="b-about__block">
   <div class="b-about__icon"><img  src="images/square.png" alt="Square"></div>
   <div class="b-about__content">
-    <h1>WORK IN TEAM</h1>
-    <p>Front-end Developers play a critical role in most projects at Code and Theory. They are actively involved throughout the project lifecycle, often times starting with rapid prototypes early in the design phase. </p>
+    <h1 class="b-about__content-title">WORK IN TEAM</h1>
+    <p class="b-about__content-description">Front-end Developers play a critical role in most projects at Code and Theory. They are actively involved throughout the project lifecycle, often times starting with rapid prototypes early in the design phase. </p>
   </div>
 </div>
 
@@ -91,12 +94,12 @@
 <!--end o_nama -->
 
 <!--start poslovi -->
-<div id="work" class="b-work">
+<div id="work" class="b-work ">
 <div class="main-wrapper">
 <div class="b-work__intro">
     <span>OTVORENE POZICIJE</span>
-    <h2>POSLOVI</h2>
-    <p>We are always looking for motivated, multi-talented, and organized people to join our
+    <h2 class="b-work__intro-title">POSLOVI</h2>
+    <p class="b-work__intro-description">We are always looking for motivated, multi-talented, and organized people to join our
     diverse team.</p>
 </div>
 
@@ -104,8 +107,8 @@
  <div class="b-position">
       <div class="b-position__content clearfix">
           <div class="b-position__description">
-              <h3>FRONT-END DEVELOPER</h3>
-              <p>Trazimo Front End Developera sa odlicnim poznavanjem i iskustvom vise od godinu dana u Drupalu.</p>
+              <h3 class="b-position__description-title">FRONT-END DEVELOPER</h3>
+              <p class="b-position__description-descriptiontext">Trazimo Front End Developera sa odlicnim poznavanjem i iskustvom vise od godinu dana u Drupalu.</p>
               <div class="b-position__description-skill">
                   <span>#HTML</span>
                   <span>#CSS</span>
@@ -118,8 +121,8 @@
  <div class="b-position">
       <div class="b-position__content clearfix">
           <div class="b-position__description">
-            <h3>PROJECT MANAGER</h3>
-            <p>Trazimo Project Managera sa odlicnim organizacionim sposobnostima i iskustvom vodjenja digital projekata...</p>
+            <h3 class="b-position__description-title">PROJECT MANAGER</h3>
+            <p class="b-position__description-descriptiontext">Trazimo Project Managera sa odlicnim organizacionim sposobnostima i iskustvom vodjenja digital projekata...</p>
             <div class="b-position__description-skill">
                 <span>#HTML</span>
                 <span>#CSS</span>
@@ -133,8 +136,8 @@
  <div class="b-position">
       <div class="b-position__content clearfix">
           <div class="b-position__description">
-            <h3>UX/UI DESIGNER</h3>
-            <p>Ako si kreativan i volis da radis u timu, posedujes visegodisnje iskustvo iz oblasti digital dizajna, ux/ui...</p>
+            <h3 class="b-position__description-title">UX/UI DESIGNER</h3>
+            <p class="b-position__description-descriptiontext">Ako si kreativan i volis da radis u timu, posedujes visegodisnje iskustvo iz oblasti digital dizajna, ux/ui...</p>
             <div class="b-position__description-skill">
                 <span>#Sketch</span>
                 <span>#AdobeXD</span>
@@ -156,12 +159,12 @@
 
 <!-- start contact -->
 
-<div id="contact" class="b-contact">
+<div class="b-contact">
 <div class="main-wrapper">
     <div class="b-contact__intro">
         <span>DIWANEE BEOGRAD</span>
-        <h2>DIGITAL MEDIA COMPANY</h2>
-        <p>Diwanee je digitalna medijska kompanija, okrenuta velikoj ženskoj publici na Bliskom istoku. Naša kompanija stvara i distribuira originalan, visokokvalitetan i pouzdan sadržaj. Diwanee je takođe partner sa YouTube-om, i zajedno smo pokrenuli kanal "DUNIATI", nudeći na taj način sve vrste bogatog video sadržaja za arapske žene širom sveta.<br><br>Radimo sa velikim brojem brendova radi povećanja angažovanja, a sve u digitalnom prostoru. Diwanee je partner i sa velikim regionalnim vlasnicima medija, kako bismo upravljali svojom digitalnom prisutnošću.</p>
+        <h2 class="b-contact__intro-title">DIGITAL MEDIA COMPANY</h2>
+        <p class="b-contact__intro-description">Diwanee je digitalna medijska kompanija, okrenuta velikoj ženskoj publici na Bliskom istoku. Naša kompanija stvara i distribuira originalan, visokokvalitetan i pouzdan sadržaj. Diwanee je takođe partner sa YouTube-om, i zajedno smo pokrenuli kanal "DUNIATI", nudeći na taj način sve vrste bogatog video sadržaja za arapske žene širom sveta.<br><br>Radimo sa velikim brojem brendova radi povećanja angažovanja, a sve u digitalnom prostoru. Diwanee je partner i sa velikim regionalnim vlasnicima medija, kako bismo upravljali svojom digitalnom prisutnošću.</p>
     </div>
         <div class="b-contact__social-m">
             <div class="b-contact__social-m__title">PRATITE NAS</div>
@@ -175,6 +178,7 @@
 </div>
 <!--end contact -->
 <!--start footer -->
+<div class = "wrapper-full">
 <footer class="b-footer clearfix">
 <div class="main-wrapper">
 <div class="b-footer__location clearfix">
@@ -223,8 +227,9 @@
 </div>
 </div>
 </footer>
+</div>
 <!--end footer -->
 </div>
 </body>
-<script src="js/file.js"></script>
+<script src="../dist/js/jsdropdown.js"></script>
 </html>

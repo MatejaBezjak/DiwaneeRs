@@ -2,12 +2,20 @@
   position: relative;
   width: 100%;
 	margin: 0 auto;
-	max-width: 1440px;
+	max-width: 144rem;
 }
 .main-wrapper{
 	width: 100%;
 	margin: 0 auto;
-	max-width: 1440px;
+	max-width: 144rem;
+}
+.wrapper-full{
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 .clearfix::after {
   content: "";

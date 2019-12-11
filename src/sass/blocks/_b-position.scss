@@ -38,6 +38,9 @@
         & .c-btn{
           color: $white;
           border-color: $white;
+          &:hover{
+            box-shadow: 0 0 0.4rem $white;
+          }
         }
 
       }
@@ -72,7 +75,7 @@
       float: left;
       padding-top: 0.6rem;
   }
-    h3{
+    &-title{
       font-family: $roboto;
       @include lineHeightRem (42, 24, 24);
       @include fontSizeRem (18, 20, 20);
@@ -84,7 +87,7 @@
         margin-bottom: 1.7rem;
       }
     }
-    p{
+    &-descriptiontext{
       font-family: $roboto;
       @include lineHeightRem (20, 28, 28);
       @include fontSizeRem (15, 18, 18);

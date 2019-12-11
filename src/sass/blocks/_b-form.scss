@@ -1,0 +1,147 @@
+.b-form{
+  max-width: 100%;
+  position: relative;
+  display: block;
+  margin-bottom: 5.5rem;
+  &__container{
+    max-width: 28.5rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5.7rem;
+    @include breakpoint(tablet){
+      max-width: 84rem;
+      margin-bottom: 0.3rem;
+    }
+    @include breakpoint(desktop){
+      max-width: 84.2rem;
+      margin-bottom: 6.4rem;
+    }
+  }
+  &__intro{
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+    margin-bottom: 6rem;
+    @include breakpoint(tablet){
+      margin-top: 2.7rem;
+      justify-self: center;
+      margin-bottom: 10.7rem;
+    }
+    @include breakpoint(desktop){
+      margin-top: 6.7rem;
+      margin-bottom: 10.7rem;
+    }
+    &-title{
+      position: relative;
+      color: $black;
+      padding-top: 6.3rem;
+      font-family: $roboto;
+      @include fontSizeRem (50, 50, 50);
+      font-weight: 400;
+      &::after{
+        position: absolute;
+        content:"";
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: -4rem;
+        border-bottom: 2px solid red;
+        width: 5.6rem;
+      }
+    }
+  }
+  &__content{
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 3.2rem;
+    @include breakpoint(tablet){
+      grid-gap: 3.15rem;
+    }
+
+  }
+  &__field{
+    max-width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 6.4rem;
+    grid-gap: 1.3rem;
+    @include breakpoint(tablet){
+      grid-gap: 1.4rem;
+    }
+
+    &-label{
+      display: block;
+      color: $black;
+      font-family: $roboto;
+      @include fontSizeRem (24, 24, 24);
+      font-weight: 300;
+
+    }
+    &-input{
+      max-width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      &--text{
+        resize: none;
+        width: 100%;
+        height: 100%;
+        border: 0.2rem solid $border-input;
+        padding-left: 1.5rem;
+        @include fontSizeRem (21, 21, 21);
+        color: $font-input;
+        font-weight: 300;
+        text-align: start;
+
+      }
+      &--icon{
+        display: none;
+        position: absolute;
+        max-width: 100%;
+        height: auto;
+        align-self: center;
+        padding-right: 2.7rem;
+      }
+    }
+    &-errors{
+      color: $error-red;
+      font-family: $roboto;
+      font-weight: 400;
+      @include fontSizeRem (16, 16, 16);
+
+    }
+  }
+  &__msg-field{
+    grid-template-rows: auto;
+  }
+  &__button{
+    justify-self: center;
+    grid-template-rows: auto;
+    grid-row-start: 6;
+  }
+  & .c-btn{
+
+        &--bordered{
+          display: inline-block;
+          width: 16.9rem;
+          height: 4.7rem;
+          letter-spacing: 0.1em;
+          text-align: center;
+        }
+  }
+}
+.b-contact__social-m-contact-page{
+  margin-bottom: 7rem;
+  @include breakpoint(tablet){
+    margin-bottom: 13.4rem;
+  }
+  @include breakpoint(desktop){
+    margin-bottom: 10.6rem;
+  }
+}
+.b-header__list-contactp{
+  margin-bottom: 17.3rem;
+}

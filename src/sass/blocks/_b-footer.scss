@@ -138,6 +138,9 @@
         @include breakpoint(desktop){
           width: 2.1rem;
           height: 2rem;
+          &:hover{
+            opacity: 0.5;
+          }
         }
       }
       span{
@@ -146,6 +149,11 @@
         @include fontSizeRem (14, 14, 14);
         font-weight: 300;
         color: $font-dark-grey;
+        @include breakpoint(desktop){
+          &:hover{
+            opacity: 0.5;
+          }
+        }
 
       }
     }

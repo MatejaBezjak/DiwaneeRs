@@ -2,11 +2,24 @@
   position: relative;
   left: 0;
   width: 100%;
-  & .main-wrapper {
+  &__container{
+    position: relative;
     height: 55.8rem;
     background: url(../images/MainImg.png);
     background-position: center center;
     background-size: cover;
+    &::after{
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: $overlay;
+      opacity: 0.1;
+      z-index: 4;
+
+    }
     @include breakpoint(tablet){
       height: 48.8rem;
     }
@@ -20,6 +33,7 @@
     top: 30.7%;
     text-align: center;
     margin: auto;
+    z-index: 5;
     @include breakpoint(tablet){
       position: relative;
       top: 32.5%;
@@ -29,7 +43,7 @@
       top: 31.9%;
     }
 
-    h1{
+    &-title{
       position: relative;
       color: black;
       padding-bottom: 4.5rem;
@@ -60,7 +74,7 @@
         }
       }
     }
-    h2{
+    &-description{
       position: relative;
       font-family: $roboto;
       @include fontSizeRem (20, 24, 24);
