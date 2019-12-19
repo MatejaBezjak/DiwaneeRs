@@ -144,4 +144,10 @@
 }
 .b-header__list-contactp{
   margin-bottom: 17.3rem;
+  @include breakpoint(tablet){
+    margin-bottom: 9.4rem;
+  }
+  @include breakpoint(desktop){
+    margin-bottom: 0;
+  }
 }
